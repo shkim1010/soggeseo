@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>흔들리는 꽃들 속에서 네 향수향이 느껴진 거야</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="lockscreen" id="lockscreen">
+    <img class="background" src="iphone-16-wallpaper-03.jpg" alt="배경화면" />
+    <div class="overlay"></div>
+    <div class="clock" id="clock">00:00</div>
+    <div class="music-widget" aria-label="현재 재생중인 음악">
+      <div class="song-info">
+        <div class="title" id="songTitle">Love Dive</div>
+        <div class="artist" id="songArtist">IVE</div>
+      </div>
+      <div class="music-bar"></div>
+    </div>
+    <div class="slide-text" id="slideText" role="button" tabindex="0" aria-pressed="false" aria-label="밀어서 시작">🌸 향기로 대화를 시작해볼까요? 🌬️</div>
+  </div>
+
+  <main class="chat-screen" id="chatScreen" role="region" aria-live="polite" aria-label="대화창">
+    <section class="messages" id="messages"></section>
+    <form class="input-area" id="chatForm" autocomplete="off" aria-label="메시지 입력창">
+      <input type="text" id="userInput" placeholder="좋아하는 노래 제목을 입력하세요..." aria-label="노래 제목 입력" required />
+      <button type="submit" id="sendBtn" aria-label="메시지 전송">전송</button>
+    </form>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
